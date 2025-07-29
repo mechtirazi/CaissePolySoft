@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="CaissePoly.Componnents.BarreNavigation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="60" d:DesignWidth="800">
+    <Grid Background="#F8FAFC" Height="60">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <!-- Date -->
+            <ColumnDefinition Width="100"/>
+            <!-- Caissier -->
+            <ColumnDefinition Width="80"/>
+            <!-- Caisse -->
+            <ColumnDefinition Width="*"/>
+            <!-- App Name -->
+            <ColumnDefinition Width="Auto"/>
+            <!-- Home Button -->
+            <ColumnDefinition Width="Auto"/>
+            <!-- Close Button -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Date et Heure -->
+        <Border Grid.Column="0" Background="#FFFFFF" Margin="5" CornerRadius="4" BorderThickness="1" BorderBrush="#E2E8F0">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                <TextBlock Text="DATE" FontWeight="Bold" FontSize="10" Foreground="#64748B" HorizontalAlignment="Center" />
+                <TextBlock Text="{Binding CurrentDate}" FontSize="12" Foreground="#1E293B" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding CurrentTime}" FontSize="11" Foreground="#64748B" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Caissier -->
+        <Border Grid.Column="1" Background="#FFFFFF" Margin="5" CornerRadius="4" BorderThickness="1" BorderBrush="#E2E8F0">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                <TextBlock Text="CAISSIER" FontWeight="Bold" FontSize="10" Foreground="#64748B" HorizontalAlignment="Center" />
+                <TextBlock Text="Admin" FontSize="12" Foreground="#1E293B" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Caisse -->
+        <Border Grid.Column="2" Background="#FFFFFF" Margin="5" CornerRadius="4" BorderThickness="1" BorderBrush="#E2E8F0">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5">
+                <TextBlock Text="CAISSE" FontWeight="Bold" FontSize="10" Foreground="#64748B" HorizontalAlignment="Center"/>
+                <TextBlock Text="C1" FontSize="12" Foreground="#1E293B" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
+
+        <!-- App Name Section -->
+        <StackPanel Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="POLY" FontWeight="Bold" FontSize="24" Foreground="#F59E0B" Margin="0,0,10,0"/>
+            <TextBlock Text="SOFT" FontWeight="Bold" FontSize="24" Foreground="#3B82F6"/>
+        </StackPanel>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Column="4" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
+            <!-- Home Button -->
+            <Button Width="36" Height="36" Background="White" BorderBrush="#E2E8F0" BorderThickness="1" 
+                ToolTip="Accueil" Margin="0,0,10,0" Click="AccueilButton_Click">
+                <Viewbox Width="16" Height="16">
+                    <Path Data="M5,10 L10,5 L15,10 L13,10 L13,15 L7,15 L7,10 Z" Fill="#334155"/>
+                </Viewbox>
+            </Button>
+
+            <!-- Close Button -->
+            <Button Width="36" Height="36" Background="#EF4444" BorderBrush="Transparent"  ToolTip="Fermer" Click="Button_Click">
+                <TextBlock Text="✕" FontSize="14" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

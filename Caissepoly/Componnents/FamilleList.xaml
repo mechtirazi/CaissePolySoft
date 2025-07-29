@@ -1,0 +1,162 @@
+﻿<UserControl x:Class="CaissePoly.Componnents.FamilleList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CaissePoly.Componnents"
+             xmlns:localConv="clr-namespace:CaissePoly.ViewModel.Converters"
+             xmlns:localc="clr-namespace:CaissePoly.ViewModel"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <localConv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+
+        <Style TargetType="Button" x:Key="CategoryButtonStyle">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E2E8F0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Margin" Value="0,0,0,8"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="Foreground" Value="#334155"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <ContentPresenter Content="{TemplateBinding Content}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="Center"
+                                              Margin="{TemplateBinding Padding}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#F8FAFC"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="#CBD5E1"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#EFF6FF"/>
+                                <Setter TargetName="border" Property="BorderBrush" Value="#93C5FD"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="FamilyButtonStyle" BasedOn="{StaticResource CategoryButtonStyle}">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Background" Value="#F0F9FF"/>
+            <Setter Property="BorderBrush" Value="#BFDBFE"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="10" Background="#F8FAFC">
+        <!-- 2 columns: Articles on left, Families on right -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ARTICLES SECTION (left) -->
+        <Border Grid.Column="0"
+                BorderThickness="1"
+                BorderBrush="#E2E8F0"
+                Padding="10"
+                Margin="0,0,5,0"
+                CornerRadius="8"
+                Background="White"
+               >
+
+            <DockPanel>
+                <!-- Search box -->
+                <TextBox DockPanel.Dock="Top"
+                         Text="{Binding ArticleSearchText, UpdateSourceTrigger=PropertyChanged}"
+                         Margin="0,0,0,10"
+                       
+                        />
+
+                <!-- Articles list -->
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ItemsControl x:Name="ArticleItems"
+                                  ItemsSource="{Binding ArticlesParFamille}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding designation}"
+                                        Command="{Binding DataContext.SelectArticleCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                        CommandParameter="{Binding}"
+                                        Style="{StaticResource CategoryButtonStyle}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </DockPanel>
+        </Border>
+
+        <!-- FAMILIES SECTION (right) -->
+        <Border Grid.Column="1"
+                BorderThickness="1"
+                BorderBrush="#E2E8F0"
+                Padding="10"
+                Margin="5,0,0,0"
+                CornerRadius="8"
+                Background="White"
+             >
+
+            <StackPanel>
+                <!-- Families header -->
+                <Button Content="Familles"
+                        FontWeight="Bold"
+                        FontSize="16"
+                        Margin="0,0,0,10"
+                        Height="40"
+                        Background="#EFF6FF"
+                        BorderBrush="#BFDBFE"
+                        Foreground="#1D4ED8"
+                        Command="{Binding AfficherFamillesCommand}"
+                       />
+
+                <!-- Families list -->
+                <ListBox x:Name="FamilleListBox"
+                         ItemsSource="{Binding Familles}"
+                         SelectedItem="{Binding SelectedFamille, Mode=TwoWay}"
+                         Visibility="{Binding AfficherFamilles, Converter={StaticResource BoolToVisibilityConverter}}"
+                         BorderThickness="0"
+                         Background="Transparent"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Padding" Value="0"/>
+                            <Setter Property="Margin" Value="0,0,0,8"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <ContentPresenter/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Button Content="{Binding nomF}"
+                                    Command="{Binding DataContext.SelectFamilleCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                    CommandParameter="{Binding}"
+                                    Style="{StaticResource FamilyButtonStyle}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

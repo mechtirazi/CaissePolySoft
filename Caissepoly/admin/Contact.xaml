@@ -1,0 +1,193 @@
+﻿<Window x:Class="CaissePoly.admin.Contact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Contact" 
+          Height="700" 
+   Width="1302"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFFDF1DC">
+
+    <Window.Resources>
+        <!-- Title Style -->
+        <Style x:Key="TitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2C3E50"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,20"/>
+        </Style>
+
+        <!-- Contact Info Style -->
+        <Style x:Key="ContactInfoStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#2C3E50"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Contact Label Style -->
+        <Style x:Key="ContactLabelStyle" TargetType="Run">
+            <Setter Property="Foreground" Value="#2980B9"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <!-- Button Style -->
+        <Style x:Key="BackButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#95A5A6"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#7F8C8D"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Icon Button Style -->
+        <Style x:Key="IconButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="#2980B9"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="ToolTipService.ShowOnDisabled" Value="True"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="#3498DB"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Info Card Style -->
+        <Style x:Key="ContactCardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#BDC3C7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Padding" Value="15"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#40000000" BlurRadius="5" ShadowDepth="2" Opacity="0.2"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#A9D0F5" Padding="15" CornerRadius="4">
+            <TextBlock Text="CONTACT POLYSOFT &amp; CO" 
+                       Style="{StaticResource TitleStyle}"/>
+        </Border>
+
+        <!-- Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,15,0,0">
+            <StackPanel>
+                <!-- Description -->
+                <Border Style="{StaticResource ContactCardStyle}">
+                    <TextBlock Text="PolySoft &amp; CO est votre partenaire de confiance pour toutes vos solutions logicielles. Notre équipe dédiée est à votre écoute pour vous accompagner et répondre à vos besoins."
+                               TextWrapping="Wrap"
+                               FontSize="14"
+                               Foreground="#2C3E50"/>
+                </Border>
+
+                <!-- Contact Information -->
+                <Border Style="{StaticResource ContactCardStyle}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                           
+                            <TextBlock Style="{StaticResource ContactInfoStyle}">
+                                <Run Style="{StaticResource ContactLabelStyle}">Téléphone :</Run>
+                                <Run Text=" +219 94 989 824"/>
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                            
+                            <TextBlock Style="{StaticResource ContactInfoStyle}">
+                                <Run Style="{StaticResource ContactLabelStyle}">Email :</Run>
+                                <Run Text=" contact@polysoft&amp;co.com"/>
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        
+                            <TextBlock Style="{StaticResource ContactInfoStyle}">
+                                <Run Style="{StaticResource ContactLabelStyle}">Adresse :</Run>
+                                <Run Text=" Rue Tunis, Sfax, Tunisie"/>
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                          
+                            <TextBlock Style="{StaticResource ContactInfoStyle}">
+                                <Run Style="{StaticResource ContactLabelStyle}">Horaires :</Run>
+                                <Run Text=" Lun - Ven : 9h00 - 18h00"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Social Media -->
+                <Border Style="{StaticResource ContactCardStyle}">
+                    <StackPanel>
+                        <TextBlock Text="Suivez-nous sur :" 
+                                   FontWeight="Bold"
+                                   Foreground="#2C3E50"
+                                   Margin="0,0,0,10"/>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Style="{StaticResource IconButtonStyle}" 
+                                    Content="📘"
+                                    ToolTip="Facebook"/>
+
+                            <Button Style="{StaticResource IconButtonStyle}" 
+                                    Content="🐦"
+                                    ToolTip="Twitter"/>
+
+                            <Button Style="{StaticResource IconButtonStyle}" 
+                                    Content="💼"
+                                    ToolTip="LinkedIn"/>
+
+                            <Button Style="{StaticResource IconButtonStyle}" 
+                                    Content="📷"
+                                    ToolTip="Instagram"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Back Button -->
+        <Button Grid.Row="2" Content="Retour" 
+                Style="{StaticResource BackButtonStyle}"
+                HorizontalAlignment="Left"
+                Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="admin\BonSortieWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\Contact.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\FicheUtilisateur.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\information.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\inventaire\inventaire.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\LoginAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\MenuPrincipal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="admin\MenuPrincipale.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AjouterFamille.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\ArticleList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\BarreNavigation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\boutton\Espece.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\FamilleList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\NumericPad.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\NumeroTicketPrix.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componnents\SearchBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="espece.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FicheArticle.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CaisseView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="admin\BonSortieWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\Contact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\FicheUtilisateur.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\information.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\inventaire\inventaire.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\LoginAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\MenuPrincipal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="admin\MenuPrincipale.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\ArticleList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\BarreNavigation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\boutton\Espece.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\FamilleList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\NumericPad.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\NumeroTicketPrix.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componnents\SearchBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="espece.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FicheArticle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CaisseView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

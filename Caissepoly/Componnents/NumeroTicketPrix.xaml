@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="CaissePoly.Componnents.NumeroTicketPrix"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Grid Background="#F1F5F9" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- 🔵 Header: Ticket Selector -->
+        <Border Background="White"
+                CornerRadius="10"
+                Padding="16"
+                BorderBrush="#CBD5E1"
+                BorderThickness="1"
+                Margin="0 0 0 16"
+                HorizontalAlignment="Center"
+                Width="350">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="N° Ticket :" 
+                           FontWeight="SemiBold" 
+                           FontSize="18"
+                           Foreground="#1E293B"
+                           VerticalAlignment="Center"
+                           Margin="0,0,10,0"/>
+
+                <ComboBox Width="200" 
+                          Height="38"
+                          FontSize="16"
+                          ItemsSource="{Binding ListeTickets}"
+                          SelectedItem="{Binding SelectedTicket, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          IsEditable="True"
+                          Background="White"
+                          BorderBrush="#E2E8F0"
+                          Foreground="#0F172A"
+                          Padding="4"
+                          Margin="0"
+                          />
+            </StackPanel>
+        </Border>
+
+        <!-- 🟢 Main Section: Total Ticket -->
+        <Grid Grid.Row="1" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Section vide à gauche (future zone paiement ou détail ticket ?) -->
+            <Border Grid.Column="0"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Margin="0"/>
+
+            <!-- 🧾 Total Ticket à droite -->
+            <Border Background="White"
+                    BorderThickness="1"
+                    BorderBrush="#CBD5E1"
+                    CornerRadius="12"
+                    Padding="20"
+                    VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="100,0,100,0">
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBlock Text="Total à payer" 
+                               FontSize="16" 
+                               Foreground="#64748B"
+                               FontWeight="Medium"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,6"/>
+                    <TextBlock Text="{Binding TotalTicket, StringFormat={}{0:F3} DT}" 
+                               FontSize="30" 
+                               FontWeight="Bold" 
+                               Foreground="#10B981"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

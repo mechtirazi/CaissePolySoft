@@ -1,0 +1,153 @@
+﻿<UserControl x:Class="CaissePoly.Componnents.NumericPad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CaissePoly.Componnents.boutton"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <!-- Style bouton rond, modernisé avec animation sur hover -->
+        <Style x:Key="RoundButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Margin" Value="6"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="14"
+                                BorderBrush="#ddd"
+                                BorderThickness="1"
+                                SnapsToDevicePixels="True"
+                                >
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#e0e7ff"/>
+                                <!-- bleu clair au hover -->
+                                <Setter Property="Foreground" Value="#1e40af"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#c7d2fe"/>
+                                <!-- bleu plus foncé à la pression -->
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="#aaa"/>
+                                <Setter Property="Background" Value="#f5f5f5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style spécial pour le bouton Entrée -->
+        <Style x:Key="EnterButtonStyle" TargetType="Button" BasedOn="{StaticResource RoundButtonStyle}">
+            <Setter Property="Background" Value="#2563eb"/>
+            <!-- bleu vif -->
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="Margin" Value="6"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="18"
+                                >
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1e40af"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#1e3a8a"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#a5b4fc"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="#f9fafb"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!-- Pavé numérique -->
+        <Grid Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Chiffres 1 à 9 -->
+            <Button Content="1" Grid.Row="0" Grid.Column="0" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="1"/>
+            <Button Content="2" Grid.Row="0" Grid.Column="1" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="2"/>
+            <Button Content="3" Grid.Row="0" Grid.Column="2" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="3"/>
+
+            <Button Content="4" Grid.Row="1" Grid.Column="0" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="4"/>
+            <Button Content="5" Grid.Row="1" Grid.Column="1" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="5"/>
+            <Button Content="6" Grid.Row="1" Grid.Column="2" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="6"/>
+
+            <Button Content="7" Grid.Row="2" Grid.Column="0" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="7"/>
+            <Button Content="8" Grid.Row="2" Grid.Column="1" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="8"/>
+            <Button Content="9" Grid.Row="2" Grid.Column="2" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="9"/>
+
+            <!-- Ligne 0, 00, delete et entrée -->
+            <Button Content="00" Grid.Row="3" Grid.Column="0" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="00"/>
+            <Button Content="0" Grid.Row="3" Grid.Column="1" Style="{StaticResource RoundButtonStyle}" Command="{Binding NumberCommand}" CommandParameter="0"/>
+           
+            <Button Content="Entrée" Grid.Row="3" Grid.Column="3" Style="{StaticResource EnterButtonStyle}" Command="{Binding EnterCommand}"/>
+            <Button Content="⌫" Grid.Row="3" Grid.Column="2" Style="{StaticResource RoundButtonStyle}" Command="{Binding DeleteCharCommand}"/>
+            <Button Content="Supprimer &#xD;&#xA;    article" Style="{StaticResource RoundButtonStyle}" Command="{Binding DeleteArticleCommand}" Margin="6,10,10,10"  Grid.Row="1" Grid.Column="3" Cursor="Hand" Click="Button_Click" FontSize="10"/>
+            <Button Content="✅ Valider commande"
+        Grid.Row="2"
+                     Grid.Column="3"
+        Margin="10"
+        FontSize="22"
+        FontWeight="Bold"
+        Background="#10B981"
+        Foreground="White"
+        Padding="10"
+        Command="{Binding ValiderCommandeCommand}" />
+            <Button Content="🖨️ Imprimer Ticket"
+        Grid.Row="0" Grid.Column="3"
+        Margin="10"
+        FontSize="20"
+        FontWeight="Bold"
+        Background="#3B82F6"
+        Foreground="White"
+        Padding="10"
+        Command="{Binding PrintTicketCommand}" />
+
+        </Grid>
+    </Grid>
+</UserControl>

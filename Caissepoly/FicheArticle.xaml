@@ -1,0 +1,210 @@
+﻿<Window x:Class="CaissePoly.FicheArticle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaissePoly"
+        xmlns:viewmodel="clr-namespace:CaissePoly.ViewModel"
+        xmlns:components="clr-namespace:CaissePoly.Componnents"
+        mc:Ignorable="d"
+        Title="FicheArticle"
+        Height="700" 
+ Width="1302"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+ResizeMode="NoResize"
+AllowsTransparency="True"
+Background="Transparent"
+>
+
+    <Grid Background="#FFFDF1DC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- BarreNavigation -->
+            <RowDefinition Height="Auto"/>
+            <!-- Titre -->
+            <RowDefinition Height="*"/>
+            <!-- Contenu principal -->
+            <RowDefinition Height="Auto"/>
+            <!-- Boutons -->
+        </Grid.RowDefinitions>
+
+        <!-- Barre de navigation -->
+        <components:BarreNavigation Grid.Row="0"/>
+
+        <!-- Titre principal -->
+        <Border Grid.Row="1" Background="#A9D0F5" Padding="10">
+            <TextBlock Text="FICHE ARTICLE" FontSize="18" FontWeight="Bold" 
+                   Foreground="#2C3E50" VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" TextAlignment="Center"/>
+        </Border>
+
+        <!-- Contenu principal -->
+        <Grid Grid.Row="2" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Formulaire à gauche -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Margin="10">
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Margin" Value="0,10,0,2"/>
+                            <Setter Property="Foreground" Value="#2C3E50"/>
+                        </Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Margin" Value="0,0,0,5"/>
+                            <Setter Property="Padding" Value="5"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="#BDC3C7"/>
+                        </Style>
+                        <Style TargetType="CheckBox">
+                            <Setter Property="Margin" Value="0,5,0,15"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <Label Content="Code"/>
+                    <TextBox Text="{Binding SelectedArticle.idA}" 
+                             IsEnabled="{Binding DataContext.IsCodeEnabled, RelativeSource={RelativeSource AncestorType=Window}}"/>
+
+                    <Label Content="Code à barre"/>
+                    <TextBox Text="{Binding SelectedArticle.codeabare}"/>
+
+                    <Label Content="Désignation"/>
+                    <TextBox Text="{Binding SelectedArticle.designation}"/>
+
+                    <Label Content="Unité"/>
+                    <TextBox Text="DT "/>
+
+                    <Label Content="ID Famille"/>
+                    <TextBox Text="{Binding SelectedArticle.idF}"/>
+
+                    <Label Content="Prix"/>
+                    <TextBox Text="{Binding SelectedArticle.prixunitaire}"/>
+
+                    <Label Content="TVA"/>
+                    <TextBox Text="18%"/>
+
+                    <Label Content="Stock"/>
+                    <TextBox Text="{Binding SelectedArticle.quantiteStock}"/>
+
+                    <Label Content="Quantité Du Vente"/>
+                    <TextBox Text="{Binding SelectedArticle.quantiteVente}"/>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Liste des articles à droite -->
+            <Grid Grid.Column="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Barre de recherche -->
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0,0,0,10">
+                    <TextBox Width="200" Margin="0,0,10,0" 
+                             Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                             Padding="5"/>
+                    <Button Content="🔍"
+                            Command="{Binding SearchCommand}"
+                            ToolTip="Afficher tous les articles"
+                            Margin="0,0,10,0"
+                            Width="120"
+                            Height="30"/>
+                    <TextBlock Text="{Binding FilteredArticles.Count, StringFormat='{}{0} articles'}" 
+                               FontSize="14" 
+                               Foreground="#64748B" 
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Liste -->
+                <ListView Grid.Row="1"
+                          ItemsSource="{Binding Articles}"
+                          SelectedItem="{Binding SelectedArticle, Mode=TwoWay}"
+                          Margin="0"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Stretch"
+                          BorderThickness="0"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Padding" Value="8"/>
+                            <Setter Property="Margin" Value="0,0,0,4"/>
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="BorderBrush" Value="#E2E8F0"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#F8FAFC"/>
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#EFF6FF"/>
+                                    <Setter Property="BorderBrush" Value="#3B82F6"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.Resources>
+
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Code" Width="80">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding idA}" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Désignation" Width="200">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding designation}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Prix" Width="80">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding prixunitaire, StringFormat={}{0:N2}}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Stock" Width="80">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding quantiteStock}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Grid>
+
+        <!-- Boutons d'action -->
+        <Border Grid.Row="3" Background="#ECF0F1" Padding="10" BorderThickness="0,1,0,0" BorderBrush="#BDC3C7">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Nouveau" Margin="5" Width="120" Height="35"
+                        Command="{Binding NewArticleCommand}"
+                        Background="#3498DB" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="Button_Click_1"/>
+                <Button Content="Sauvegarder" Margin="5" Width="120" Height="35"
+                        Command="{Binding SaveArticleCommand}"
+                        Background="#2ECC71" Foreground="White" FontWeight="Bold" BorderThickness="0"/>
+                <Button Content="Supprimer" Margin="5" Width="120" Height="35"
+                        Command="{Binding RemoveSelectedArticleCommand}"
+                        Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderThickness="0"/>
+                <Button Content="Retour" Margin="5" Width="120" Height="35"
+                        Command="{Binding CloseCommand}"
+                        Background="#95A5A6" Foreground="White" FontWeight="Bold" BorderThickness="0" Click="Button_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,528 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\ajouterfamille.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:ajouterfamille.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\ajouterfamille.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:ajouterfamille.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\information.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\information.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\information.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\information.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\ficheutilisateur.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\ficheutilisateur.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\ficheutilisateur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\ficheutilisateur.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\contact.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\bonsortiewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\bonsortiewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\espece.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:espece.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\menuprincipale.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\menuprincipale.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\loginadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\loginadmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\contact.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\admin\\bonsortiewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:admin\\bonsortiewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\viewmodel\\bonsortieviewmodell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:viewmodel\\bonsortieviewmodell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\viewmodel\\venteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:viewmodel\\venteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\componnents\\articlelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:componnents\\articlelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\componnents\\articlelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:componnents\\articlelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\viewmodel\\converters\\indexconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:viewmodel\\converters\\indexconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\viewmodel\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:viewmodel\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:model\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:model\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\model\\vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:model\\vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\model\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:model\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|c:\\users\\msi\\source\\repos\\caissepolysoft-wpf\\caissepoly\\caissepoly.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF103531-A2F5-4FA8-A2D1-837DD0F92058}|CaissePoly.csproj|solutionrelative:caissepoly.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:513822689:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "information.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\information.xaml",
+              "RelativeDocumentMoniker": "admin\\information.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\information.xaml",
+              "RelativeToolTip": "admin\\information.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T00:53:26.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AjouterFamille.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\AjouterFamille.xaml",
+              "RelativeDocumentMoniker": "AjouterFamille.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\AjouterFamille.xaml",
+              "RelativeToolTip": "AjouterFamille.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T00:54:08.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FicheUtilisateur.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\FicheUtilisateur.xaml",
+              "RelativeDocumentMoniker": "admin\\FicheUtilisateur.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\FicheUtilisateur.xaml",
+              "RelativeToolTip": "admin\\FicheUtilisateur.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:16:46.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\Contact.xaml.cs",
+              "RelativeDocumentMoniker": "admin\\Contact.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\Contact.xaml.cs",
+              "RelativeToolTip": "admin\\Contact.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:18:28.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AjouterFamille.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\AjouterFamille.xaml.cs",
+              "RelativeDocumentMoniker": "AjouterFamille.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\AjouterFamille.xaml.cs",
+              "RelativeToolTip": "AjouterFamille.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwCwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:11:01.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAiwBsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T15:11:55.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FicheUtilisateur.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\FicheUtilisateur.xaml.cs",
+              "RelativeDocumentMoniker": "admin\\FicheUtilisateur.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\FicheUtilisateur.xaml.cs",
+              "RelativeToolTip": "admin\\FicheUtilisateur.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwDAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:18:55.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "information.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\information.xaml.cs",
+              "RelativeDocumentMoniker": "admin\\information.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\information.xaml.cs",
+              "RelativeToolTip": "admin\\information.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAnwCwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:19:11.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BonSortieWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\BonSortieWindow.xaml.cs",
+              "RelativeDocumentMoniker": "admin\\BonSortieWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\BonSortieWindow.xaml.cs",
+              "RelativeToolTip": "admin\\BonSortieWindow.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:48:41.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "espece.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\espece.xaml",
+              "RelativeDocumentMoniker": "espece.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\espece.xaml",
+              "RelativeToolTip": "espece.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:17:45.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "admin\\MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\MenuPrincipal.xaml",
+              "RelativeToolTip": "admin\\MenuPrincipal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:17:01.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuPrincipale.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\MenuPrincipale.xaml",
+              "RelativeDocumentMoniker": "admin\\MenuPrincipale.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\MenuPrincipale.xaml",
+              "RelativeToolTip": "admin\\MenuPrincipale.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T00:55:49.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginAdmin.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\LoginAdmin.xaml",
+              "RelativeDocumentMoniker": "admin\\LoginAdmin.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\LoginAdmin.xaml",
+              "RelativeToolTip": "admin\\LoginAdmin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:16:58.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T16:00:17.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Login.xaml",
+              "RelativeDocumentMoniker": "Login.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Login.xaml",
+              "RelativeToolTip": "Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T00:45:05.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BonSortieWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\BonSortieWindow.xaml",
+              "RelativeDocumentMoniker": "admin\\BonSortieWindow.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\BonSortieWindow.xaml",
+              "RelativeToolTip": "admin\\BonSortieWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T14:48:01.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Contact.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\Contact.xaml",
+              "RelativeDocumentMoniker": "admin\\Contact.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\admin\\Contact.xaml",
+              "RelativeToolTip": "admin\\Contact.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T00:51:50.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BonSortieViewModell.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\BonSortieViewModell.cs",
+              "RelativeDocumentMoniker": "ViewModel\\BonSortieViewModell.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\BonSortieViewModell.cs",
+              "RelativeToolTip": "ViewModel\\BonSortieViewModell.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowLEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T01:01:57.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:11:56.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VenteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\VenteViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\VenteViewModel.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\VenteViewModel.cs",
+              "RelativeToolTip": "ViewModel\\VenteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:44:12.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IndexConverter.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\Converters\\IndexConverter.cs",
+              "RelativeDocumentMoniker": "ViewModel\\Converters\\IndexConverter.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\Converters\\IndexConverter.cs",
+              "RelativeToolTip": "ViewModel\\Converters\\IndexConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:19:48.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\4315b130d37ec1c13dcbffadb62faf5459da3810441204f490a8637c4a8c6da9\\XamlReader.cs",
+              "ViewState": "AgIAAPMBAAAAAAAAAAArwP4BAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T17:15:32.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ArticleList.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Componnents\\ArticleList.xaml.cs",
+              "RelativeDocumentMoniker": "Componnents\\ArticleList.xaml.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Componnents\\ArticleList.xaml.cs",
+              "RelativeToolTip": "Componnents\\ArticleList.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:41:14.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BoolToVisibilityConverter.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "ViewModel\\Converters\\BoolToVisibilityConverter.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\ViewModel\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeToolTip": "ViewModel\\Converters\\BoolToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T17:22:16.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ArticleList.xaml",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Componnents\\ArticleList.xaml",
+              "RelativeDocumentMoniker": "Componnents\\ArticleList.xaml",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Componnents\\ArticleList.xaml",
+              "RelativeToolTip": "Componnents\\ArticleList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-26T15:45:17.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs [Lecture seule]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\fkiah\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs [Lecture seule]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:57:06.546Z",
+              "EditorCaption": " [Lecture seule]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Vente.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Vente.cs",
+              "RelativeDocumentMoniker": "Model\\Vente.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Vente.cs",
+              "RelativeToolTip": "Model\\Vente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:35:30.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Model\\Utilisateur.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Utilisateur.cs",
+              "RelativeToolTip": "Model\\Utilisateur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:35:29.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Ticket.cs",
+              "RelativeDocumentMoniker": "Model\\Ticket.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Ticket.cs",
+              "RelativeToolTip": "Model\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:35:24.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Article.cs",
+              "RelativeDocumentMoniker": "Model\\Article.cs",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\Model\\Article.cs",
+              "RelativeToolTip": "Model\\Article.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:35:19.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CaissePoly.csproj",
+              "DocumentMoniker": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\CaissePoly.csproj",
+              "RelativeDocumentMoniker": "CaissePoly.csproj",
+              "ToolTip": "C:\\Users\\msi\\source\\repos\\CaissePolysoft-WPF\\Caissepoly\\CaissePoly.csproj",
+              "RelativeToolTip": "CaissePoly.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-24T00:48:12.065Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
